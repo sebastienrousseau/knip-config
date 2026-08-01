@@ -35,7 +35,8 @@
     "index.cjs",
     "index.d.ts",
     "knip-config.svg",
-    "LICENSE"
+    "LICENSE",
+    ".editorconfig"
   ],
   "publishConfig": {
     "access": "public"
