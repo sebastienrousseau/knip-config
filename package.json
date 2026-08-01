@@ -33,7 +33,8 @@
     "index.js",
     "index.mjs",
     "index.cjs",
-    "index.d.ts"
+    "index.d.ts",
+    "knip-config.svg"
   ],
   "publishConfig": {
     "access": "public"
