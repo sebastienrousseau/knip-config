@@ -1,0 +1,51 @@
+{
+  "name": "@sebastienrousseau/knip-config",
+  "version": "1.0.0",
+  "description": "Shareable Knip configuration rules for finding unused files, dependencies, and exports",
+  "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/sebastienrousseau/knip-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastienrousseau/knip-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebastienrousseau/knip-config/issues"
+  },
+  "keywords": [
+    "knip",
+    "knip-config",
+    "unused-files",
+    "dead-code",
+    "dependencies"
+  ],
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node test/test.js",
+    "lint": "node test/test.js"
+  },
+  "peerDependencies": {
+    "knip": ">=5.0.0"
+  },
+  "devDependencies": {
+    "knip": "^5.0.0"
+  }
+}
