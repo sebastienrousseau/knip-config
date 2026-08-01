@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: ISC -->
 
 <p align="center">
-  <img src="https://cloudcdn.pro/beonux/v1/logos/beonux.svg" alt="knip-config logo" width="128" />
+  <img src="./knip-config.svg" alt="knip-config logo" width="128" />
 </p>
 
 <h1 align="center">@sebastienrousseau/knip-config</h1>
