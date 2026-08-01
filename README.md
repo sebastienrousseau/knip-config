@@ -11,10 +11,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/sebastienrousseau/knip-config/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/knip-config/ci.yml?style=for-the-badge&logo=github" alt="Build Status" /></a>
-  <a href="https://www.npmjs.com/package/@sebastienrousseau/knip-config"><img src="https://img.shields.io/npm/v/@sebastienrousseau/knip-config.svg?style=for-the-badge&color=fc8d62&logo=npm" alt="npm package" /></a>
+  <a href="https://github.com/sebastienrousseau/knip-config/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/knip-config/ci.yml?branch=main&style=for-the-badge&logo=github" alt="Build Status" /></a>
+  <a href="https://www.npmjs.com/package/@sebastienrousseau/knip-config"><img src="https://img.shields.io/npm/v/@sebastienrousseau%2Fknip-config?style=for-the-badge&color=fc8d62&logo=npm" alt="npm package" /></a>
   <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/knip-config"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/knip-config?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
-  <a href="https://github.com/sebastienrousseau/knip-config/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-ISC-blue.svg?style=for-the-badge" alt="License" /></a>
+  <a href="https://github.com/sebastienrousseau/knip-config/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-ISC-blue?style=for-the-badge" alt="License" /></a>
 </p>
 
 ---

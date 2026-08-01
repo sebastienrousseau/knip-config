@@ -34,7 +34,8 @@
     "index.mjs",
     "index.cjs",
     "index.d.ts",
-    "knip-config.svg"
+    "knip-config.svg",
+    "LICENSE"
   ],
   "publishConfig": {
     "access": "public"
