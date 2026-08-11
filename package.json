@@ -1,6 +1,6 @@
 {
   "name": "@sebastienrousseau/knip-config",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Shareable Knip configuration rules for finding unused files, dependencies, and exports",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
   "license": "ISC",
@@ -49,6 +49,6 @@
     "knip": ">=5.0.0"
   },
   "devDependencies": {
-    "knip": "^6.31.0"
+    "knip": "^6.32.0"
   }
 }
