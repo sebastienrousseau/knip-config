@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "description": "Shareable Knip configuration rules for finding unused files, dependencies, and exports",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
-  "license": "ISC",
+  "license": "Apache-2.0 OR MIT",
   "homepage": "https://github.com/sebastienrousseau/knip-config#readme",
   "repository": {
     "type": "git",
