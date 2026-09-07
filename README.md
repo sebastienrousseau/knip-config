@@ -13,6 +13,7 @@
 <p align="center">
   <a href="https://github.com/sebastienrousseau/knip-config/actions"><img src="https://img.shields.io/github/actions/workflow/status/sebastienrousseau/knip-config/ci.yml?branch=main&style=for-the-badge&logo=github" alt="Build Status" /></a>
   <a href="https://www.npmjs.com/package/@sebastienrousseau/knip-config"><img src="https://img.shields.io/npm/v/%40sebastienrousseau%2Fknip-config.svg?style=for-the-badge&color=fc8d62&logo=npm" alt="npm package" /></a>
+  <a href="https://sebastienrousseau.com/knip-config/"><img src="https://img.shields.io/badge/docs-sebastienrousseau.com-brightgreen.svg?style=for-the-badge&logo=github" alt="Documentation" /></a>
   <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/knip-config"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/knip-config?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
   <a href="https://www.bestpractices.dev/projects/14510"><img src="https://img.shields.io/cii/level/14510?style=for-the-badge&label=OpenSSF%20Best%20Practices&logo=openssf" alt="OpenSSF Best Practices" /></a>
   <a href="LICENSE-APACHE"><img src="https://img.shields.io/badge/license-Apache--2.0%20OR%20MIT-blue.svg?style=for-the-badge" alt="License: Apache-2.0 OR MIT" /></a>
