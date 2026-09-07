@@ -1,7 +1,7 @@
 site_name = "knip-config"
 site_title = "@sebastienrousseau/knip-config — Shareable Knip configuration rules for finding unused files, dependencies, and exports"
 site_description = "Shareable Knip configuration rules for finding unused files, dependencies, and exports"
-base_url = "https://config.sebastienrousseau.com/knip-config"
+base_url = "https://sebastienrousseau.com/knip-config/"
 language = "en-GB"
 
 content_dir = "web/content"
