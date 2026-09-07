@@ -1,0 +1,16 @@
+site_name = "knip-config"
+site_title = "@sebastienrousseau/knip-config — Shareable Knip configuration rules for finding unused files, dependencies, and exports"
+site_description = "Shareable Knip configuration rules for finding unused files, dependencies, and exports"
+base_url = "https://config.sebastienrousseau.com/knip-config"
+language = "en-GB"
+
+content_dir = "web/content"
+template_dir = "web/_layouts"
+output_dir = "public"
+
+[agents]
+agents_txt = true
+ai_plugin = true
+
+[agents.mcp]
+enabled = true
