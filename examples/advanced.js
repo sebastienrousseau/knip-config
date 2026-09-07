@@ -1,12 +1,6 @@
 /**
- * Advanced usage example with custom overrides for @sebastienrousseau/knip-config
+ * Advanced Knip custom entry configuration
  */
-const baseConfig = require("../index.cjs");
-
-const customConfig = Object.assign({}, baseConfig, {
-  _custom: true,
-  _timestamp: new Date().toISOString()
-});
-
-console.log("Custom extended configuration created:");
-console.log(customConfig._custom ? "Custom configuration active" : "Error");
+const base = require("../index.cjs");
+const custom = { ...base, entry: [...base.entry, "cli.js"] };
+console.log("Updated entry patterns count:", custom.entry.length);
