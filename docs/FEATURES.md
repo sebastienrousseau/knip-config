@@ -21,14 +21,18 @@ An exhaustive overview covering **100% of the features, rules, and capabilities*
 ## Feature Deep Dive
 
 ### 1. Entrypoint Scanning
+
 Automatic discovery across src and root module entrypoints. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
 ### 2. Project File Globbing
+
 Comprehensive source pattern matching for TS and JS. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
 ### 3. Artifact Exclusion
+
 Safe exclusions for coverage, dist, and declaration files. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 
 ### 4. Zero Unused Dependency Tolerance
+
 Enforces zero dead dependencies in production. Designed to guarantee deterministic behavior across all development and continuous integration environments.
 

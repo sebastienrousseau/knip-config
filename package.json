@@ -1,6 +1,6 @@
 {
   "name": "@sebastienrousseau/knip-config",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "Shareable Knip configuration rules for finding unused files, dependencies, and exports",
   "author": "Sebastien Rousseau <sebastienrousseau@users.noreply.github.com>",
   "license": "Apache-2.0 OR MIT",
@@ -42,16 +42,28 @@
     "access": "public"
   },
   "scripts": {
-    "test": "node --test --experimental-test-coverage --test-coverage-exclude=\"tests/**\" --test-coverage-lines=98 --test-coverage-branches=98 --test-coverage-functions=98 tests/unit.test.js tests/integration.test.js tests/bench.test.js",
-    "test:coverage": "node --test --experimental-test-coverage --test-coverage-exclude=\"tests/**\" --test-coverage-lines=98 --test-coverage-branches=98 --test-coverage-functions=98 tests/unit.test.js tests/integration.test.js tests/bench.test.js",
+    "test": "node --test tests/conformance.test.js tests/bench.test.js",
     "bench": "node benches/bench_load.js",
     "examples": "node examples/basic.js && node examples/advanced.js && node examples/features.js && node examples/esm.mjs",
-    "docs:build": "bash scripts/build-docs.sh"
+    "docs:build": "bash scripts/build-docs.sh",
+    "test:conformance": "node --test tests/conformance.test.js",
+    "fuzz": "node fuzz/fuzz_config.js",
+    "validate": "knip --config index.cjs --no-exit-code"
   },
   "peerDependencies": {
     "knip": ">=5.0.0"
   },
   "devDependencies": {
+    "@sebastienrousseau/config-kit": "^0.0.8",
     "knip": "^6.34.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "sideEffects": false,
+  "configKit": {
+    "shape": "object",
+    "presets": [],
+    "nativeToolchain": "knip"
   }
 }
