@@ -5,6 +5,7 @@ Comprehensive schema, property definitions, and exported options reference for `
 ---
 
 ## Description
+
 Shareable Knip configuration detecting unused files, dependencies, and exports.
 
 ---
@@ -22,21 +23,25 @@ Shareable Knip configuration detecting unused files, dependencies, and exports.
 ## Feature & Property Reference
 
 ### 1. Entrypoint Scanning
+
 - **Description**: Automatic discovery across src and root module entrypoints
 - **Scope**: Production & Development
 - **Status**: Stable & Active
 
 ### 2. Project File Globbing
+
 - **Description**: Comprehensive source pattern matching for TS and JS
 - **Scope**: Production & Development
 - **Status**: Stable & Active
 
 ### 3. Artifact Exclusion
+
 - **Description**: Safe exclusions for coverage, dist, and declaration files
 - **Scope**: Production & Development
 - **Status**: Stable & Active
 
 ### 4. Zero Unused Dependency Tolerance
+
 - **Description**: Enforces zero dead dependencies in production
 - **Scope**: Production & Development
 - **Status**: Stable & Active
