@@ -1,9 +1,14 @@
+// SPDX-FileCopyrightText: 2026 Sebastien Rousseau <sebastian.rousseau@gmail.com>
+// SPDX-License-Identifier: Apache-2.0 OR MIT
+
 /**
- * Modern Knip ESM Configuration
+ * ESM entrypoint.
+ *
+ * The configuration is defined once, in `index.cjs`, and re-exported here so the
+ * two module systems cannot drift apart. Node resolves a CommonJS default import
+ * to `module.exports`, which is exactly the value consumers of the CJS entry get.
  */
-export default {
-  entry: ["src/index.{ts,tsx,js,jsx}", "index.{ts,js,mjs,cjs}"],
-  project: ["src/**/*.{ts,tsx,js,jsx}", "index.{ts,js,mjs,cjs}"],
-  ignore: ["**/*.d.ts", "coverage/**/*", "dist/**/*"],
-  ignoreDependencies: []
-};
+
+import config from "./index.cjs";
+
+export default config;

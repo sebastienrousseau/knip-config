@@ -17,7 +17,7 @@
   <a href="https://scorecard.dev/viewer/?uri=github.com/sebastienrousseau/knip-config"><img src="https://img.shields.io/ossf-scorecard/github.com/sebastienrousseau/knip-config?style=for-the-badge&label=OpenSSF%20Scorecard&logo=openssf" alt="OpenSSF Scorecard" /></a>
   <a href="https://www.bestpractices.dev/projects/14510"><img src="https://img.shields.io/cii/level/14510?style=for-the-badge&label=OpenSSF%20Best%20Practices&logo=openssf" alt="OpenSSF Best Practices" /></a>
   <a href="LICENSE-APACHE"><img src="https://img.shields.io/badge/license-Apache--2.0%20OR%20MIT-blue.svg?style=for-the-badge" alt="License: Apache-2.0 OR MIT" /></a>
-  <a href="#minimum-toolchain-policy"><img src="https://img.shields.io/badge/node->=%2018.0.0-93450a.svg?style=for-the-badge&logo=node.js" alt="Node >= 18.0.0" /></a>
+  <a href="#minimum-toolchain-policy"><img src="https://img.shields.io/badge/node->=%2020.0.0-93450a.svg?style=for-the-badge&logo=node.js" alt="Node >= 20.0.0" /></a>
 </p>
 
 ---
@@ -84,7 +84,7 @@ make            # check + test
 
 ## Requirements
 
-- **Node.js 18.0.0 or newer.** Every package manifest declares `engines.node`, and CI enforces the runtime floor on every push across macOS, Linux, and Windows.
+- **Node.js 20.0.0 or newer.** Declared in `engines.node` and proved on every push: the CI matrix runs Node 20, 22, 24 on Linux, macOS and Windows, and fails if the matrix floor and `engines.node` disagree.
 - **npm 9.0.0 or newer** (or modern pnpm / yarn / bun).
 - **Module systems.** Full native support for ECMAScript Modules (ESM) and CommonJS (CJS).
 - **TypeScript 5.0 or newer** (optional, recommended for type checking).
@@ -93,25 +93,12 @@ make            # check + test
 
 ## Quick Start
 
-### In `package.json`
+Knip reads `knip.json`, or a JS config that requires this package.
 
-```json
-{
-  "knip": "@sebastienrousseau/knip-config"
-}
-```
-
-### In CommonJS Configuration
+### knip.config.cjs
 
 ```js
 module.exports = require("@sebastienrousseau/knip-config");
-```
-
-### In ES Module Configuration
-
-```js
-import config from "@sebastienrousseau/knip-config";
-export default config;
 ```
 
 ---
@@ -241,7 +228,7 @@ make test
 
 ## Minimum-toolchain policy
 
-The minimum supported Node.js version is **18.0.0**. The floor may raise only when:
+The minimum supported Node.js version is **20.0.0**. The floor may raise only when:
 
 1. An upstream LTS version reaches official End-of-Life (EOL).
 2. The reason is explicitly recorded in `CHANGELOG.md` and `DEVELOPMENT.md`.
