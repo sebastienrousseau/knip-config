@@ -1,0 +1,26 @@
+# Maintainer: Sebastien Rousseau <sebastian.rousseau@gmail.com>
+pkgname=nodejs-sebastienrousseau-knip-config
+pkgver=0.0.7
+pkgrel=1
+pkgdesc="Shareable Knip configuration rules for finding unused files, dependencies, and exports"
+arch=('any')
+url="https://github.com/sebastienrousseau/knip-config"
+license=('Apache-2.0' 'MIT')
+depends=('nodejs>=20')
+makedepends=('npm')
+source=("https://registry.npmjs.org/@sebastienrousseau/knip-config/-/knip-config-${pkgver}.tgz")
+# Filled in by `updpkgsums` against the published tarball; the npm registry
+# tarball for a given version is immutable, so the sum is stable.
+sha256sums=('SKIP')
+
+package() {
+  npm install -g --prefix "${pkgdir}/usr" "${srcdir}/knip-config-${pkgver}.tgz"
+
+  # npm records the build path in these; strip them so the package is
+  # reproducible and does not leak $srcdir.
+  find "${pkgdir}/usr" -name '.package-lock.json' -delete
+  chmod -R u=rwX,go=rX "${pkgdir}"
+
+  install -Dm644 "${pkgdir}/usr/lib/node_modules/@sebastienrousseau/knip-config/LICENSE" \
+    "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
