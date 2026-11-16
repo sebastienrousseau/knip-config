@@ -6,7 +6,7 @@
 class KnipConfig < Formula
   desc "Shareable Knip configuration rules for finding unused files, dependencies, and exports"
   homepage "https://github.com/sebastienrousseau/knip-config"
-  url "https://registry.npmjs.org/@sebastienrousseau/knip-config/-/knip-config-0.0.7.tgz"
+  url "https://registry.npmjs.org/@sebastienrousseau/knip-config/-/knip-config-0.0.9.tgz"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on "node"
