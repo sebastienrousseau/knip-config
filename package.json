@@ -54,7 +54,7 @@
     "knip": ">=5.0.0"
   },
   "devDependencies": {
-    "@sebastienrousseau/config-kit": "^0.0.8",
+    "@sebastienrousseau/config-kit": "^0.0.9",
     "knip": "^6.34.0"
   },
   "engines": {
